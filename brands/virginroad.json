@@ -1,0 +1,47 @@
+{
+  "id": "virginroad",
+  "name": "버진로드",
+  "image_mode": "generate",
+  "one_liner": "결혼할 사람을 만나고 싶은 고객이, 사전 심사를 거친 남녀와 풀빌라에서 1박 2일을 함께하며 서로를 깊이 알아보는 프리미엄 매칭 프로그램",
+  "facts": [
+    "결혼을 전제로 한 프리미엄 매칭 서비스",
+    "사전 심사를 거친 남녀 6:6이 참여",
+    "풀빌라에서 1박 2일을 함께 보냄",
+    "대화, 식사, 여러 경험을 통해 서로의 가치관·생활방식·결혼관을 알아감",
+    "프로필이나 조건만 보고 고르는 방식이 아님",
+    "짧은 카페 소개팅보다 깊게 서로를 알아보는 경험"
+  ],
+  "must_show": ["풀빌라 1박 2일", "남녀 6:6", "전원 사전 심사", "결혼 전제 매칭", "짧은 카페 소개팅보다 깊게 알아보는 경험"],
+  "target": "결혼을 진지하게 생각하는 30대 전후 한국 남녀. 소개팅·앱 매칭에서 짧은 만남과 조건 비교에 지친 사람.",
+  "tone": "고급스럽고 깔끔하지만 차갑지 않게. 과장 없이 담백하고 진지하게. 기대감과 설렘.",
+  "badges": ["풀빌라 1박 2일", "남녀 6:6", "전원 사전 심사", "결혼 전제 매칭"],
+  "approved_copy": [
+    { "headline": "함께 지낸 2일 = 소개팅 100번", "sub": "", "highlight": "소개팅 100번", "hook_type": "확정 문구" },
+    { "headline": "2시간 카페 소개팅보다 깊은,\n풀빌라 1박 2일", "sub": "", "highlight": "풀빌라 1박 2일", "hook_type": "확정 문구" }
+  ],
+  "banned_phrases": [
+    "성혼율", "성공률", "보장", "100%", "무조건", "반드시 결혼", "연봉", "의사", "변호사", "대기업",
+    "고급스러운 만남", "운명", "완벽한", "특별한 인연", "새로운 시작", "여정", "당신만을 위한"
+  ],
+  "compare": {
+    "left":  { "label": "카페 소개팅", "items": ["2시간", "첫인상과 조건 위주"] },
+    "right": { "label": "버진로드",   "items": ["풀빌라 1박 2일", "대화·식사·여러 경험"] }
+  },
+  "colors": { "bg": "#F5F0E8", "ink": "#211C17", "muted": "#8A8178", "accent": "#9A6B3F", "accent_light": "#F2D6A8", "card": "#FFFFFF" },
+  "layouts": ["hero_bottom", "cream_top", "compare", "bubble", "frame", "badge_grid"],
+  "image_style": {
+    "base": "Candid lifestyle photograph for a Korean premium marriage-matchmaking program. Korean men and women in their early-to-mid 30s, smart-casual modest clothing, natural makeup. Shot on a 35mm film camera, natural DAYLIGHT, soft window light or bright overcast daylight, true-to-life colors. Realistic skin texture with visible pores, fine lines and subtle imperfections, unretouched, natural hair flyaways, slight film grain, shallow depth of field. The PEOPLE and the feeling between them are the main subject and fill most of the frame; the private pool villa is only a softly blurred background. Genuine, unposed expressions, nobody looks at the camera. No text, no letters, no logos, no watermark.",
+    "avoid": "sunset, golden hour, dusk, night, candles, string lights, neon, dramatic lighting, airbrushed or plastic skin, porcelain doll faces, overly symmetrical faces, beauty-filter look, glamour model poses, swimwear, luxury resort advertisement, wide empty architecture shots, text"
+  },
+  "scenes": [
+    { "id": "terrace_brunch",  "label": "테라스 브런치에서 마주 앉아 웃음",   "emotion": "편안한 웃음", "prompt": "A man and a woman sitting across from each other at a brunch table on a sunny villa terrace in late morning, she laughs at something he said, he smiles while looking at her, coffee cups and simple food on the table, medium close-up." },
+    { "id": "kitchen_cooking", "label": "주방에서 함께 요리하다 눈 마주침", "emotion": "설렘",       "prompt": "A man and a woman cooking together in a bright villa kitchen at midday, chopping vegetables side by side, they glance at each other and share a shy smile, daylight from a large window, medium shot from the side." },
+    { "id": "garden_walk",     "label": "정원 산책하며 대화",                "emotion": "진지한 대화", "prompt": "A man and a woman walking slowly side by side on a garden path of a villa on a bright afternoon, talking, he listens attentively while she speaks, natural greenery, three-quarter view, waist-up framing." },
+    { "id": "sofa_talk",       "label": "창가 소파에서 깊은 대화",           "emotion": "진지한 경청", "prompt": "A man and a woman sitting on a sofa by a large window in a villa living room during the day, turned toward each other in a sincere conversation, she is listening with a warm, thoughtful expression, soft window light on their faces, medium close-up." },
+    { "id": "group_lunch",     "label": "여럿이 긴 테이블에서 점심",          "emotion": "어울림",     "prompt": "Several Korean men and women (about 6 to 8 people visible) having lunch together at a long wooden table in a bright villa dining room, natural conversation and laughter, in the foreground one man and one woman exchange a smiling glance, documentary style." },
+    { "id": "poolside_feet",   "label": "풀사이드에 걸터앉아 대화",           "emotion": "설렘",       "prompt": "A man and a woman in casual summer clothes (not swimwear) sitting on the edge of a villa pool with their feet in the water on a bright afternoon, talking and smiling at each other, the pool is only partly visible, focus on their faces and body language, medium shot." },
+    { "id": "board_game",      "label": "보드게임 하다 함께 웃음",           "emotion": "자연스러운 웃음", "prompt": "A small group of Korean men and women playing a card or board game on a living room floor table in a villa during the day, a man and a woman in the center burst into laughter together, candid snapshot." },
+    { "id": "morning_coffee",  "label": "둘째 날 아침 창가 커피",            "emotion": "편안함",     "prompt": "Early morning of the second day, a man and a woman standing by a big window holding coffee mugs, soft morning daylight, relaxed and comfortable, she looks at him with a gentle smile, medium close-up." }
+  ]
+}
+

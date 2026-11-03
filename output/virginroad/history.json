@@ -1,0 +1,10 @@
+{
+  "layouts": {
+    "frame": 1,
+    "hero_bottom": 1
+  },
+  "scenes": {
+    "sofa_talk": 1,
+    "board_game": 1
+  }
+}
