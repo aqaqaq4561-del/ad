@@ -25,3 +25,4 @@ for (const cat of categories) {
 console.log('\n' + '='.repeat(65));
 console.log('✅ 총 15개 엄선 세트 로드 완료 (언제든 렌더러에 즉시 주입 가능)');
 console.log('='.repeat(65));
+
