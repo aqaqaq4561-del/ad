@@ -1,0 +1,250 @@
+{
+  "brand": "virginroad",
+  "brand_name": "버진로드",
+  "updated_at": "2026-11-04",
+  "description": "버진로드 고전환 후킹 카피 30개 모음 (3대 검증 축: 압축비교 10개, 결혼직구 10개, 사전심사 프리미엄 10개)",
+  "copies": [
+    {
+      "id": "VR_01",
+      "angle": "COMPRESSION",
+      "line1": "소개팅 <span class=\"gold\">100번</span> =",
+      "line2": "풀빌라 <span class=\"gold\">1박 2일</span>",
+      "sub": "결혼 전제 프리미엄 매칭 | 버진로드",
+      "pills": ["남녀 6:6", "풀빌라 1박 2일", "전원 사전 심사"]
+    },
+    {
+      "id": "VR_02",
+      "angle": "COMPRESSION",
+      "line1": "커피 <span class=\"gold\">2시간</span> 대신",
+      "line2": "풀빌라 <span class=\"gold\">48시간</span>",
+      "sub": "국내 유일 숙박형 결혼 매칭 | 버진로드",
+      "pills": ["사전 심사제", "가치관 매칭", "후속 매칭 보장"]
+    },
+    {
+      "id": "VR_03",
+      "angle": "COMPRESSION",
+      "line1": "소개팅 <span class=\"gold\">12번</span> 대신,",
+      "line2": "주말 단 <span class=\"gold\">1번</span>",
+      "sub": "결혼 전제 프리미엄 매칭 | 버진로드",
+      "pills": ["남녀 6:6", "주말 1박 2일", "결혼 전제"]
+    },
+    {
+      "id": "VR_04",
+      "angle": "COMPRESSION",
+      "line1": "조건표 <span class=\"gold\">100장</span>보다",
+      "line2": "함께 지낸 <span class=\"gold\">2일</span>",
+      "sub": "국내 유일 숙박형 결혼 매칭 | 버진로드",
+      "pills": ["성격·가치관 매칭", "전원 사전 심사", "가평 풀빌라"]
+    },
+    {
+      "id": "VR_05",
+      "angle": "COMPRESSION",
+      "line1": "<span class=\"gold\">1년 치</span> 소개팅,",
+      "line2": "이번 주말 <span class=\"gold\">48시간</span>",
+      "sub": "결혼 전제 프리미엄 매칭 | 버진로드",
+      "pills": ["남녀 6:6", "풀빌라 1박 2일", "후속 매칭 보장"]
+    },
+    {
+      "id": "VR_06",
+      "angle": "COMPRESSION",
+      "line1": "어색한 <span class=\"gold\">2시간</span> 대화 =",
+      "line2": "결혼 확신 <span class=\"gold\">48시간</span>",
+      "sub": "결혼 전제 프리미엄 매칭 | 버진로드",
+      "pills": ["성격·가치관 매칭", "남녀 6:6", "가평 풀빌라"]
+    },
+    {
+      "id": "VR_07",
+      "angle": "COMPRESSION",
+      "line1": "프로필 사진 <span class=\"gold\">100장</span>보다",
+      "line2": "마주 앉은 <span class=\"gold\">1박 2일</span>",
+      "sub": "국내 유일 숙박형 결혼 매칭 | 버진로드",
+      "pills": ["참가자 사전 심사", "결혼 전제", "후속 매칭 보장"]
+    },
+    {
+      "id": "VR_08",
+      "angle": "COMPRESSION",
+      "line1": "주말마다 지치는 소개팅 끝,",
+      "line2": "단 한 번의 <span class=\"gold\">48시간</span>",
+      "sub": "결혼 전제 프리미엄 매칭 | 버진로드",
+      "pills": ["남녀 6:6", "풀빌라 1박 2일", "전원 사전 심사"]
+    },
+    {
+      "id": "VR_09",
+      "angle": "COMPRESSION",
+      "line1": "함께 먹는 <span class=\"gold\">4끼</span> 식사 =",
+      "line2": "소개팅 <span class=\"gold\">50번</span>",
+      "sub": "국내 유일 숙박형 결혼 매칭 | 버진로드",
+      "pills": ["가치관 분석 120+", "사전 심사제", "가평 풀빌라"]
+    },
+    {
+      "id": "VR_10",
+      "angle": "COMPRESSION",
+      "line1": "지겨운 탐색전 <span class=\"gold\">10번</span>보다",
+      "line2": "진짜 대화 <span class=\"gold\">2일</span>",
+      "sub": "결혼 전제 프리미엄 매칭 | 버진로드",
+      "pills": ["남녀 6:6", "결혼 전제 매칭", "후속 매칭 보장"]
+    },
+
+    {
+      "id": "VR_11",
+      "angle": "MARRIAGE_DIRECT",
+      "line1": "<span class=\"gold\">48시간</span> 안에",
+      "line2": "내 결혼상대 찾기",
+      "sub": "결혼 전제 프리미엄 매칭 | 버진로드",
+      "pills": ["풀빌라 1박 2일", "남녀 6:6", "전원 사전 심사"]
+    },
+    {
+      "id": "VR_12",
+      "angle": "MARRIAGE_DIRECT",
+      "line1": "결혼할 사람 찾는",
+      "line2": "가장 확실한 <span class=\"gold\">48시간</span>",
+      "sub": "국내 유일 숙박형 결혼 매칭 | 버진로드",
+      "pills": ["결혼 전제 매칭", "가치관 분석 120+", "가평 풀빌라"]
+    },
+    {
+      "id": "VR_13",
+      "angle": "MARRIAGE_DIRECT",
+      "line1": "주말 <span class=\"gold\">1박 2일</span>,",
+      "line2": "결혼 확신 매칭",
+      "sub": "결혼 전제 프리미엄 매칭 | 버진로드",
+      "pills": ["참가자 사전 심사", "남녀 6:6", "후속 매칭 보장"]
+    },
+    {
+      "id": "VR_14",
+      "angle": "MARRIAGE_DIRECT",
+      "line1": "결혼 전제 <span class=\"gold\">남녀 6:6</span>",
+      "line2": "풀빌라 <span class=\"gold\">1박 2일</span> 매칭",
+      "sub": "결혼 전제 프리미엄 매칭 | 버진로드",
+      "pills": ["전원 사전 심사", "결혼 전제", "가평 풀빌라"]
+    },
+    {
+      "id": "VR_15",
+      "angle": "MARRIAGE_DIRECT",
+      "line1": "내년 결혼,",
+      "line2": "이번 주말 <span class=\"gold\">2일</span>로 결정",
+      "sub": "국내 유일 숙박형 결혼 매칭 | 버진로드",
+      "pills": ["남녀 6:6", "풀빌라 1박 2일", "전원 사전 심사"]
+    },
+    {
+      "id": "VR_16",
+      "angle": "MARRIAGE_DIRECT",
+      "line1": "가벼운 연애 말고,",
+      "line2": "진짜 결혼 전제 <span class=\"gold\">1박 2일</span>",
+      "sub": "결혼 전제 프리미엄 매칭 | 버진로드",
+      "pills": ["성격·가치관 매칭", "남녀 6:6", "사전 심사제"]
+    },
+    {
+      "id": "VR_17",
+      "angle": "MARRIAGE_DIRECT",
+      "line1": "결혼 의지 확실한",
+      "line2": "<span class=\"gold\">12명</span>의 만남",
+      "sub": "국내 유일 숙박형 결혼 매칭 | 버진로드",
+      "pills": ["전원 사전 심사", "가평 풀빌라", "후속 매칭 보장"]
+    },
+    {
+      "id": "VR_18",
+      "angle": "MARRIAGE_DIRECT",
+      "line1": "평생의 반려자를 알아보는",
+      "line2": "주말 <span class=\"gold\">48시간</span>",
+      "sub": "결혼 전제 프리미엄 매칭 | 버진로드",
+      "pills": ["결혼 전제 매칭", "남녀 6:6", "전원 사전 심사"]
+    },
+    {
+      "id": "VR_19",
+      "angle": "MARRIAGE_DIRECT",
+      "line1": "단순 연애 거르고,",
+      "line2": "결혼 상대 만나는 <span class=\"gold\">2일</span>",
+      "sub": "국내 유일 숙박형 결혼 매칭 | 버진로드",
+      "pills": ["사전 심사제", "가치관 분석 120+", "가평 풀빌라"]
+    },
+    {
+      "id": "VR_20",
+      "angle": "MARRIAGE_DIRECT",
+      "line1": "결혼을 결심하게 만드는",
+      "line2": "풀빌라 <span class=\"gold\">1박 2일</span>",
+      "sub": "결혼 전제 프리미엄 매칭 | 버진로드",
+      "pills": ["남녀 6:6", "결혼 전제", "후속 매칭 보장"]
+    },
+
+    {
+      "id": "VR_21",
+      "angle": "PRE_SCREENED_LUXURY",
+      "line1": "사전 심사 통과한",
+      "line2": "<span class=\"gold\">12명</span>의 풀빌라",
+      "sub": "프리미엄 프라이빗 매칭 | 버진로드",
+      "pills": ["스펙·진정성 심사", "남녀 6:6", "풀빌라 1박 2일"]
+    },
+    {
+      "id": "VR_22",
+      "angle": "PRE_SCREENED_LUXURY",
+      "line1": "결혼에 진심인 <span class=\"gold\">12명</span>,",
+      "line2": "풀빌라 <span class=\"gold\">1박 2일</span>",
+      "sub": "결혼 전제 프리미엄 매칭 | 버진로드",
+      "pills": ["전원 사전 심사", "남녀 6:6", "후속 매칭 보장"]
+    },
+    {
+      "id": "VR_23",
+      "angle": "PRE_SCREENED_LUXURY",
+      "line1": "엄선된 <span class=\"gold\">6:6</span>,",
+      "line2": "결혼 전제 <span class=\"gold\">48시간</span>",
+      "sub": "프리미엄 프라이빗 매칭 | 버진로드",
+      "pills": ["참가자 사전 심사", "가치관 매칭", "가평 풀빌라"]
+    },
+    {
+      "id": "VR_24",
+      "angle": "PRE_SCREENED_LUXURY",
+      "line1": "스펙·가치관 심사 완료된",
+      "line2": "<span class=\"gold\">12명</span>의 주말",
+      "sub": "국내 유일 숙박형 결혼 매칭 | 버진로드",
+      "pills": ["사전 심사제", "남녀 6:6", "풀빌라 1박 2일"]
+    },
+    {
+      "id": "VR_25",
+      "angle": "PRE_SCREENED_LUXURY",
+      "line1": "국내 유일,",
+      "line2": "풀빌라 <span class=\"gold\">6:6</span> 결혼 매칭",
+      "sub": "결혼 전제 프리미엄 매칭 | 버진로드",
+      "pills": ["전원 사전 심사", "1박 2일", "후속 매칭 보장"]
+    },
+    {
+      "id": "VR_26",
+      "angle": "PRE_SCREENED_LUXURY",
+      "line1": "검증된 사람만 초대받는",
+      "line2": "프라이빗 <span class=\"gold\">1박 2일</span>",
+      "sub": "프리미엄 프라이빗 매칭 | 버진로드",
+      "pills": ["참가자 사전 심사", "남녀 6:6", "가평 풀빌라"]
+    },
+    {
+      "id": "VR_27",
+      "angle": "PRE_SCREENED_LUXURY",
+      "line1": "가치관 분석 <span class=\"gold\">120+</span>,",
+      "line2": "엄선된 <span class=\"gold\">12명</span>의 주말",
+      "sub": "국내 유일 숙박형 결혼 매칭 | 버진로드",
+      "pills": ["사전 심사제", "성격·가치관 매칭", "후속 매칭 보장"]
+    },
+    {
+      "id": "VR_28",
+      "angle": "PRE_SCREENED_LUXURY",
+      "line1": "아무나 올 수 없는,",
+      "line2": "심사 통과 남녀 <span class=\"gold\">6:6</span>",
+      "sub": "프리미엄 프라이빗 매칭 | 버진로드",
+      "pills": ["스펙·진정성 심사", "풀빌라 1박 2일", "결혼 전제"]
+    },
+    {
+      "id": "VR_29",
+      "angle": "PRE_SCREENED_LUXURY",
+      "line1": "수준 높은 남녀 <span class=\"gold\">12명</span>,",
+      "line2": "가평 풀빌라 <span class=\"gold\">48시간</span>",
+      "sub": "국내 유일 숙박형 결혼 매칭 | 버진로드",
+      "pills": ["전원 사전 심사", "남녀 6:6", "후속 매칭 보장"]
+    },
+    {
+      "id": "VR_30",
+      "angle": "PRE_SCREENED_LUXURY",
+      "line1": "조건 너머의 사람을 보는",
+      "line2": "프리미엄 <span class=\"gold\">1박 2일</span>",
+      "sub": "결혼 전제 프리미엄 매칭 | 버진로드",
+      "pills": ["가치관 분석 120+", "참가자 사전 심사", "가평 풀빌라"]
+    }
+  ]
+}
