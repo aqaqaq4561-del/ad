@@ -1,10 +1,33 @@
 import fs from "node:fs";
 import { chromium } from "playwright";
 
-const toBase64 = (filePath) =>
-  `data:image/png;base64,${fs.readFileSync(filePath).toString("base64")}`;
+const artifactDir = "C:/Users/user/.gemini/antigravity/brain/858a307d-9cb5-4df7-8200-958580a03877";
 
-function makeMinimalEditorialHTML({ headline, sub, imgUri, bgPosY = "65%" }) {
+// Copy raw Nano Banana images to assets/virginroad/
+const rawFiles = [
+  ["nb_01_sunlit_terrace_1793757817755.jpg", "nb_01_sunlit_terrace.jpg"],
+  ["nb_02_backlit_table_1793757838564.jpg", "nb_02_backlit_table.jpg"],
+  ["nb_03_villa_gallery_walk_1793757858624.jpg", "nb_03_villa_gallery_walk.jpg"],
+  ["nb_04_curtain_lounge_1793757879851.jpg", "nb_04_curtain_lounge.jpg"],
+];
+
+for (const [src, dst] of rawFiles) {
+  fs.copyFileSync(`${artifactDir}/${src}`, `assets/virginroad/${dst}`);
+}
+
+const toBase64 = (filePath) => {
+  const mime = filePath.endsWith(".png") ? "image/png" : "image/jpeg";
+  return `data:${mime};base64,${fs.readFileSync(filePath).toString("base64")}`;
+};
+
+function makeMinimalEditorialHTML({
+  headline,
+  sub,
+  imgUri,
+  bgPosY = "center",
+  topPct = 6.2,
+  hlSize = 70,
+}) {
   const hlHtml = headline.replace(/\n/g, "<br>");
   return `<!doctype html>
 <html>
@@ -27,21 +50,20 @@ html, body {
   background-image: url('${imgUri}');
   background-size: cover;
   background-position: center ${bgPosY};
-  filter: saturate(0.92) contrast(0.96) brightness(1.02) sepia(0.04);
 }
 .warm-mist {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(224, 212, 194, 0.35) 0%,
-    rgba(224, 212, 194, 0.14) 34%,
-    rgba(224, 212, 194, 0) 46%
+    rgba(224, 212, 194, 0.25) 0%,
+    rgba(224, 212, 194, 0.08) 32%,
+    rgba(224, 212, 194, 0) 44%
   );
 }
 .text-block {
   position: absolute;
-  top: 5.8%;
+  top: ${topPct}%;
   left: 72px;
   right: 72px;
   display: flex;
@@ -67,7 +89,7 @@ html, body {
 }
 .headline {
   font-family: 'Noto Serif KR', serif;
-  font-size: 70px;
+  font-size: ${hlSize}px;
   font-weight: 500;
   line-height: 1.28;
   letter-spacing: -0.02em;
@@ -103,7 +125,14 @@ html, body {
 </html>`;
 }
 
-function makeFramedPortraitHTML({ headline, sub, imgUri, bgPosY = "top" }) {
+function makeFramedPortraitHTML({
+  headline,
+  sub,
+  imgUri,
+  bgPosY = "top",
+  bottomPct = 12.5,
+  hlSize = 72,
+}) {
   const hlHtml = headline.replace(/\n/g, "<br>");
   return `<!doctype html>
 <html>
@@ -126,22 +155,21 @@ html, body {
   background-image: url('${imgUri}');
   background-size: cover;
   background-position: center ${bgPosY};
-  filter: saturate(0.96) contrast(0.97) brightness(1.03) sepia(0.05);
 }
 .soft-glow {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(246, 239, 228, 0) 38%,
-    rgba(246, 239, 228, 0.48) 56%,
-    rgba(242, 233, 219, 0.76) 78%,
-    rgba(238, 228, 212, 0.84) 100%
+    rgba(246, 239, 228, 0) 44%,
+    rgba(246, 239, 228, 0.45) 60%,
+    rgba(242, 233, 219, 0.78) 80%,
+    rgba(238, 228, 212, 0.88) 100%
   );
 }
 .frame-box {
   position: absolute;
-  bottom: 13.5%;
+  bottom: ${bottomPct}%;
   left: 76px;
   right: 76px;
   display: flex;
@@ -155,7 +183,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 38px;
+  margin-bottom: 34px;
 }
 .top-rule .line {
   flex: 1;
@@ -171,12 +199,12 @@ html, body {
 }
 .headline {
   font-family: 'Noto Serif KR', serif;
-  font-size: 74px;
+  font-size: ${hlSize}px;
   font-weight: 500;
   line-height: 1.32;
   letter-spacing: -0.025em;
   color: #3B2818;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 .sub {
   font-family: 'Noto Serif KR', serif;
@@ -184,7 +212,7 @@ html, body {
   font-weight: 400;
   letter-spacing: 0.02em;
   color: #5A4330;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 .pipe {
   display: inline-block;
@@ -199,7 +227,7 @@ html, body {
 }
 .brand-bottom {
   position: absolute;
-  bottom: 5.2%;
+  bottom: 4.8%;
   left: 0;
   right: 0;
   text-align: center;
@@ -231,30 +259,55 @@ html, body {
 </html>`;
 }
 
-const uri1 = toBase64("assets/virginroad/lux_01_minimal_villa.png");
-const uri2 = toBase64("assets/virginroad/lux_02_backlit_grace.png");
+const subDefault = `풀빌라 1박 2일<span class="pipe">|</span>남녀 6:6<span class="pipe">|</span>전원 사전 심사<span class="pipe">|</span>결혼 전제 매칭`;
+
+const nb1 = toBase64("assets/virginroad/nb_01_sunlit_terrace.jpg");
+const nb2 = toBase64("assets/virginroad/nb_02_backlit_table.jpg");
+const nb3 = toBase64("assets/virginroad/nb_03_villa_gallery_walk.jpg");
+const nb4 = toBase64("assets/virginroad/nb_04_curtain_lounge.jpg");
 
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1080, height: 1350 }, deviceScaleFactor: 1 });
-const artifactDir = "C:/Users/user/.gemini/antigravity/brain/858a307d-9cb5-4df7-8200-958580a03877";
 
 const renders = [
   {
-    out: "lux_01_48h_minimal_villa.png",
+    out: "nb_01_lux_48h_sunlit_terrace.png",
     html: makeMinimalEditorialHTML({
       headline: "48시간 안에\n내 결혼상대 찾기",
-      sub: `풀빌라 1박 2일<span class="pipe">|</span>남녀 6:6<span class="pipe">|</span>전원 사전 심사<span class="pipe">|</span>결혼 전제 매칭`,
-      imgUri: uri1,
-      bgPosY: "35%",
+      sub: subDefault,
+      imgUri: nb1,
+      topPct: 6.2,
+      hlSize: 70,
     }),
   },
   {
-    out: "lux_02_48h_backlit_portrait.png",
+    out: "nb_02_lux_48h_backlit_table.png",
     html: makeFramedPortraitHTML({
       headline: "48시간 안에,\n내 결혼상대 찾기",
-      sub: `풀빌라 1박 2일<span class="pipe">|</span>남녀 6:6<span class="pipe">|</span>전원 사전 심사<span class="pipe">|</span>결혼 전제 매칭`,
-      imgUri: uri2,
-      bgPosY: "top",
+      sub: subDefault,
+      imgUri: nb2,
+      bottomPct: 11.8,
+      hlSize: 72,
+    }),
+  },
+  {
+    out: "nb_03_lux_2days_100times_gallery.png",
+    html: makeMinimalEditorialHTML({
+      headline: "함께 지낸 2일 =\n소개팅 100번",
+      sub: subDefault,
+      imgUri: nb3,
+      topPct: 6.0,
+      hlSize: 72,
+    }),
+  },
+  {
+    out: "nb_04_lux_48h_curtain_lounge.png",
+    html: makeFramedPortraitHTML({
+      headline: "2시간 소개팅 10번보다,\n서로를 다 아는 48시간",
+      sub: subDefault,
+      imgUri: nb4,
+      bottomPct: 11.5,
+      hlSize: 68,
     }),
   },
 ];
@@ -268,4 +321,3 @@ for (const r of renders) {
 }
 
 await browser.close();
-
