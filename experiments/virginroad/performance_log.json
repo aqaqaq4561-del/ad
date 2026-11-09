@@ -1,0 +1,50 @@
+{
+  "brand": "virginroad",
+  "brand_name": "버진로드",
+  "updated_at": "2026-11-09",
+  "benchmark_cpl": 5000,
+  "history": [
+    {
+      "test_id": "EXP_0815",
+      "campaign_name": "즉시 실행형 0815(남여통합)",
+      "date_range": "2026-08-15 ~ 2026-10-30",
+      "creative_names": ["함께하는 1박 2일 = 소개팅 100번 (에이스 0824)"],
+      "spend": 452929,
+      "impressions": 31874,
+      "reach": 18961,
+      "leads": 94,
+      "cpl": 4818,
+      "status": "WINNER",
+      "takeaways": "CPL 최저(₩4,818) 및 리드 질 최고. 숫자 대조(=)와 남녀통합 세트가 최적의 조합임을 증명."
+    },
+    {
+      "test_id": "EXP_1104",
+      "campaign_name": "1104",
+      "date_range": "2026-11-04 ~ 2026-11-09",
+      "creative_names": [
+        "48시간 안에 내 결혼상대 찾기 (화이트 드레스 인물)",
+        "함께 지낸 2일 = 소개팅 100번 (거실 인물)"
+      ],
+      "spend": 75223,
+      "impressions": 1684,
+      "reach": 1214,
+      "leads": 3,
+      "cpl": 25074,
+      "status": "FAILED",
+      "failure_reason": "화이트 웨딩드레스/수트 착용으로 유저들이 '웨딩홀/스드메 광고'로 오인 스킵함. 풀빌라 숙소 공간감이 안 보여 CPL 5.2배 폭등.",
+      "action": "2026-11-09 오후 즉시 중지 후 숙소 강조형 2종으로 전면 교체."
+    },
+    {
+      "test_id": "EXP_1109",
+      "campaign_name": "1104 교체 라이브",
+      "start_date": "2026-11-09",
+      "creative_names": [
+        "01_48시간안에_내결혼상대찾기_석양인피니티풀.png",
+        "02_남녀6대6_1박2일결혼매칭_12인다이닝테이블.png"
+      ],
+      "status": "RUNNING",
+      "hypothesis": "웨딩 느낌 100% 제거하고 초호화 독채 풀빌라 + 12인 6:6 모임 실체를 강조하면 CPL이 ₩4,000~5,000원대로 정상화될 것.",
+      "target_cpl": 5000
+    }
+  ]
+}
