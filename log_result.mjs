@@ -44,3 +44,4 @@ console.log(`- 지출: ₩${spend.toLocaleString()} | 리드: ${leads}건 | CPL:
 console.log(`- 판정: [${status}] (기준 CPL: ₩${data.benchmark_cpl.toLocaleString()})`);
 if (notes) console.log(`- 메모: ${notes}`);
 console.log('='.repeat(65));
+
